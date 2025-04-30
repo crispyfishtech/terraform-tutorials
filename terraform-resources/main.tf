@@ -10,7 +10,7 @@ resource "local_file" "bar" {
   filename = "${path.module}/${each.key}.txt"
 }
 
-resource "local_file" "bar" {
+resource "local_file" "baz" {
   for_each = tomap({
     file1 = "content1",
     file2 = "content2",
