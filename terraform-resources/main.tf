@@ -1,5 +1,5 @@
 resource "local_file" "foo" {
-  count    = 10
+  count    = 1000
   content  = "bar!"
   filename = "${path.module}/foo${count.index}.txt"
 }
